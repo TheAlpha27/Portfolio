@@ -35,7 +35,7 @@ html[data-theme='dark']{
     color: var(--secondaryTxt);
     cursor: pointer;
 }
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 430px) {
     .nav{
         justify-content:space-between;
     }
