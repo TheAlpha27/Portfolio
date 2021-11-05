@@ -3,6 +3,7 @@ html[data-theme='light']{
     --primaryTxt: #501650;
     --secondaryTxt: #681768;
     --tertiaryTxt: #aa4daa;
+    --cardTxt: #ffffff;
 }
 html[data-theme='dark']{
     /* --bgColor: #000000;
@@ -12,7 +13,8 @@ html[data-theme='dark']{
     --bgColor: #373737;
     --primaryTxt: #ffffff;
     --secondaryTxt: #7e7e7e;
-    --tertiaryTxt: #242424;
+    --tertiaryTxt: #929191;
+    --cardTxt: #373737;
 }
 body{
     background-color: var(--bgColor);
@@ -21,19 +23,25 @@ body{
     box-sizing: border-box;
 }
 .main{
+    margin: 0;
+    padding: 0;
     display: flex;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     flex-direction: column;
     justify-content: center;
     font-family: 'Dancing Script', cursive;
+    /* border: 5px solid black; */
 }
 .waveD1, .waveD2{
     position: absolute;
     bottom: 0;
 }
+.waveD2{
+    z-index: -2;
+}
 .waveD1{
-    z-index: 1;
+    z-index: -1;
 }
 .content-box{
     /* height: 50vh; */
@@ -46,65 +54,314 @@ body{
 .txt{
     display: flex;
     flex-direction: column;
-    /* margin-left: 10vh; */
+    margin-left: 1rem;
     /* border: 2px solid black; */
     justify-content: center;
     align-items: flex-start;
 }
 .sm-line{
     position: relative;
-    top: 11vh;
+    top: 5rem;
     border: 0.1rem solid var(--primaryTxt);
-    width: 20vh;
+    width: 10rem;
     height: 0px;
 }
 .Name{
     position: relative;
-    top: 2vh;
+    top: 0.8rem;
     color: var(--primaryTxt);
-    font-size: 10vh;
+    font-size: 4.5rem;
     font-weight: bold;
 }
 .info{
     position: relative;
+    right: 1rem;
     color: var(--primaryTxt);
-    font-size: 3.5vh;
-    bottom: 13vh;
+    font-size: 1.5rem;
+    bottom: 6rem;
 }
 .imgBox{
     display: flex;
     flex-direction: column;
-    width: 40vh;
+    width: 20rem;
     justify-content: center;
     align-items: center;
     /* border: 2px solid black; */
-    /* margin-right: 10vh; */
+    margin-right: 1rem;
 }
 .ring{
-    height: 45vh;
-    width: 45vh;
-    border: 2vh solid var(--primaryTxt);
+    height: 20rem;
+    width: 20rem;
+    border: 0.8rem solid var(--primaryTxt);
     border-radius: 50% 0px 50% 50%;
     position: relative;
-    bottom: 5vh;
+    bottom: 5rem;
     overflow: hidden;
 }
 .profile{
-    height: 90vh;
+    height: 41rem;
     position: relative;
-    right: 17vh;
-    bottom: 4.3vh;
+    right: 7.3rem;
+    bottom: 2rem;
 }
-@media screen and (max-width: 430px) {
-    .content-box{
-        align-items: center;
+.card1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 3px solid black; */
+    height: 3rem;
+    width: 10.4rem;
+    position: relative;
+    right: 14rem;
+    top: 2.5rem;
+}
+.card2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 3px solid black; */
+    height: 3rem;
+    width: 10.4rem;
+    position: relative;
+    right: 16rem;
+    top: 8rem;
+}
+#box1, #box2{
+    display: none;
+    color: var(--cardTxt);
+    font-size: 1.7rem;
+    padding-top: 0.3rem;
+    padding-right: 1rem;
+    text-align: center;
+    position: absolute;
+    height: 3rem;
+    width: 10.4rem;
+    /* border: 2px solid yellow; */
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    background-color: var(--primaryTxt);
+}
+.Icon{
+    position: relative;
+    color: var(--primaryTxt);
+    left: -1rem;
+    cursor: pointer;
+    transform: scale(1.7);
+}
+#box1:hover, #box2:hover{
+    color: var(--tertiaryTxt);
+    cursor: pointer;
+}
+@media screen and (max-width: 1200px) and (orientation: landscape){
+    .txt{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2vh;
+        /* border: 2px solid black; */
         justify-content: center;
+        align-items: flex-start;
+    }
+    .sm-line{
+        position: relative;
+        top: 12vh;
+        border: 0.1rem solid var(--primaryTxt);
+        width: 20vh;
+        height: 0px;
+    }
+    .Name{
+        position: relative;
+        color: var(--primaryTxt);
+        font-size: 10vh;
+        font-weight: bold;
+    }
+    .info{
+        position: relative;
+        color: var(--primaryTxt);
+        font-size: 4vh;
+        bottom: 12vh;
+        right: 5vh;
+    }
+    .imgBox{
+        display: flex;
+        flex-direction: column;
+        width: 50vh;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid black; */
+        margin-right: 1rem;
+    }
+    .ring{
+        height: 47vh;
+        width: 47vh;
+        border: 2vh solid var(--primaryTxt);
+        border-radius: 50% 0px 50% 50%;
+        position: relative;
+        bottom: 12vh;
+        overflow: hidden;
+    }
+    .profile{
+        height: 100vh;
+        position: relative;
+        right: 20vh;
+        bottom: 5vh;
+    }
+    .card1{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /* border: 3px solid black; */
+        height: 7.5vh;
+        width: 25vh;
+        position: relative;
+        right: 32vh;
+        top: 6vh;
+    }
+    .card2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /* border: 3px solid black; */
+        height: 7.5vh;
+        width: 25vh;
+        position: relative;
+        right: 36.5vh;
+        top: 16vh;
+    }
+    #box1, #box2{
+        color: var(--cardTxt);
+        font-size: 4.5vh;
+        padding-top: 1vh;
+        text-align: center;
+        position: absolute;
+        height: 7.5vh;
+        width: 25vh;
+        /* border: 2px solid yellow; */
+        border-top-right-radius: 4vh;
+        border-bottom-right-radius: 4vh;
+        border-top-left-radius: 1vh;
+        border-bottom-left-radius: 1vh;
+        background-color: var(--primaryTxt);
+    }
+    .Icon{
+        position: relative;
+        color: var(--primaryTxt);
+        left: -2vh;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 775px) and (orientation: portrait) {
+    .content-box{
+        /* height: 50vh; */
+        /* border: 2px solid red; */
+        align-self: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        width: 100%;
+        display: flex;
     }
     .txt{
-        align-items: center;
-        justify-content: center;
+        align-self: center;
+        justify-self: center;
+        display: flex;
         flex-direction: column;
+        /* border: 2px solid black; */
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 40vh;
         margin: 0;
-        padding: 0;
+    }
+    .sm-line{
+        position: relative;
+        border: 0.1rem solid var(--primaryTxt);
+        width: 25vh;
+        height: 0px;
+        top: 13vh;
+    }
+    .Name{
+        position: relative;
+        color: var(--primaryTxt);
+        font-size: 8vh;
+        font-weight: bold;
+        top: -5vh;
+    }
+    .info{
+        position: relative;
+        right: 2vh;
+        color: var(--primaryTxt);
+        font-size: 3vh;
+    }
+    .imgBox{
+        height: 40vh;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid black; */
+        /* margin-right: 1rem; */
+    }
+    .ring{
+        height: 35vh;
+        width: 35vh;
+        border: 0.4rem solid var(--primaryTxt);
+        border-radius: 50% 0px 50% 50%;
+        position: relative;
+        top: -1vh;
+        overflow: hidden;
+    }
+    .profile{
+        height: 85vh;
+        position: relative;
+        right: 17.5vh;
+        bottom: 4vh;
+    }
+    .card1{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /* border: 3px solid black; */
+        height: 6vh;
+        width: 20vh;
+        position: absolute;
+        /* right: 14rem; */
+        /* top: 2.5rem; */
+        top: 75vh;
+        right: 1vh;
+    }
+    .card2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /* border: 3px solid black; */
+        height: 6vh;
+        width: 20vh;
+        position: absolute;
+        top: 83vh;
+        right: 1vh;
+    }
+    #box1, #box2{
+        display: none;
+        color: var(--cardTxt);
+        font-size: 3vh;
+        padding-top: 1vh;
+        padding-right: 3vh;
+        text-align: center;
+        position: absolute;
+        height: 6vh;
+        width: 20vh;
+        /* border: 2px solid yellow; */
+        border-top-right-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        border-top-left-radius: 0.4rem;
+        border-bottom-left-radius: 0.4rem;
+        background-color: var(--primaryTxt);
+    }
+    .Icon{
+        position: relative;
+        color: var(--primaryTxt);
+        cursor: pointer;
+        transform: scale(1.7);
     }
 }

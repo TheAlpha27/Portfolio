@@ -1,6 +1,26 @@
 import React from 'react'
 import '../CSS/Section1.css'
 function Section1() {
+    const box1On = () => {
+        document.getElementById('box1').style.display = 'block';
+        document.getElementById('circle1').style.color='var(--cardTxt)';
+        document.getElementById('circle1').style.transform='scale(0.8)';
+        setTimeout(() => {
+            document.getElementById('box1').style.display = 'none';
+            document.getElementById('circle1').style.color='var(--primaryTxt)';
+            document.getElementById('circle1').style.transform='scale(1.7)';
+        }, 3000);
+    }
+    const box2On = () => {
+        document.getElementById('box2').style.display = 'block';
+        document.getElementById('circle2').style.color='var(--cardTxt)';
+        document.getElementById('circle2').style.transform='scale(0.8)';
+        setTimeout(() => {
+            document.getElementById('box2').style.display = 'none';
+            document.getElementById('circle2').style.color='var(--primaryTxt)';
+            document.getElementById('circle2').style.transform='scale(1.7)';
+        }, 3000);
+    }
     return (
         <>
             <div className='main'>
@@ -18,6 +38,13 @@ function Section1() {
                         </p>
                     </div>
                     <div className="imgBox">
+                        <div className="card1">
+                            <div id="box1">About</div>
+                            <i onMouseEnter={box1On} id="circle1" className="fas fa-address-card Icon"></i>
+                        </div>
+                        <div className="card2">
+                            <div id="box2">Contact</div><i onMouseEnter={box2On} id="circle2" className="fas fa-phone Icon"></i>
+                        </div>
                         <div className="ring">
                             <img className='profile' src="https://www.pngall.com/wp-content/uploads/4/Thinking-Man-PNG-Free-Download.png" alt="" />
                         </div>

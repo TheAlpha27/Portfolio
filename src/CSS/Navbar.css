@@ -12,19 +12,19 @@ html[data-theme='dark']{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 3.5rem;
-    width: 100vw;
+    height: 10vh;
+    width: 100%;
     font-family: 'Dancing Script', cursive;
     font-size: 4vh;
     position: fixed;
 }
 .navItem{
-    margin-right: 3rem;
+    margin-right: 8vh;
     text-decoration: none;
     color: var(--primaryTxt);
 }
 .icon{
-    margin-right: 2rem;
+    margin-right: 4vh;
     color: var(--primaryTxt);
 }
 .navItem:hover{
@@ -35,14 +35,14 @@ html[data-theme='dark']{
     color: var(--secondaryTxt);
     cursor: pointer;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 775px) and (orientation: portrait) {
     .nav{
         justify-content:space-between;
     }
     .navItem{
-        margin-left: 1rem;
+        margin-left: 2vh;
     }
     .icon{
-        margin-right: 1rem;
+        margin-right: 2vh;
     }
 }
