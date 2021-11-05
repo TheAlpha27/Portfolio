@@ -21,7 +21,7 @@ function NavBar() {
     }
     return (
         <div className="nav">
-            <Link className="navItem" to="/Portfolio">
+            <Link className="navItem" to="/">
                 Home
             </Link>
             <i onClick={toggle} id="mode" className="fas fa-sun icon"></i>

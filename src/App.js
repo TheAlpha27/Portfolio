@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import Section1 from './components/Section1';
 import About from './components/About';
 
@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Navbar />
       <Switch>
-        <Route exact path="/Portfolio">
+        <Route exact path="/">
         <Section1 key="home" />
         </Route>
         <Route exact path="/about">
