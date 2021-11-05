@@ -1,7 +1,6 @@
 import React from 'react'
 import '../CSS/Navbar.css'
 import { Link } from "react-router-dom"
-import Section1 from './Section1'
 
 function NavBar() {
     const toggle = () => {
@@ -22,7 +21,7 @@ function NavBar() {
     }
     return (
         <div className="nav">
-            <Link className="navItem" to="#">
+            <Link className="navItem" to="/Portfolio">
                 Home
             </Link>
             <i onClick={toggle} id="mode" className="fas fa-sun icon"></i>

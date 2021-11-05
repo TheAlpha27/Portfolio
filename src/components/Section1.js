@@ -1,5 +1,7 @@
 import React from 'react'
 import '../CSS/Section1.css'
+import { Link } from "react-router-dom"
+
 function Section1() {
     const box1On = () => {
         document.getElementById('box1').style.display = 'block';
@@ -39,11 +41,16 @@ function Section1() {
                     </div>
                     <div className="imgBox">
                         <div className="card1">
-                            <div onMouseLeave={box1Off} id="box1">About</div>
+                            <Link id="box1" onMouseLeave={box1Off} to="/about">
+                                About
+                            </Link>
                             <i onMouseEnter={box1On} id="circle1" className="fas fa-address-card Icon"></i>
                         </div>
                         <div className="card2">
-                            <div onMouseLeave={box2Off} id="box2">Contact</div><i onMouseEnter={box2On} id="circle2" className="fas fa-phone Icon"></i>
+                            <Link onMouseLeave={box2Off} to="/contact" id="box2">
+                                Contact
+                            </Link>
+                            <i onMouseEnter={box2On} id="circle2" className="fas fa-phone Icon"></i>
                         </div>
                         <div className="ring">
                             <img className='profile' src="https://www.pngall.com/wp-content/uploads/4/Thinking-Man-PNG-Free-Download.png" alt="" />
