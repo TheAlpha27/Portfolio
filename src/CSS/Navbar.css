@@ -1,12 +1,15 @@
 html[data-theme='light']{
     --bgColor: #ffffff;
-    --primaryTxt: #501650;
-    --secondaryTxt: #8a228a;
+    --primaryTxt: #024949;
+    --secondaryTxt: #008080;
+    --tertiaryTxt: #40E0D0;
 }
 html[data-theme='dark']{
-    --bgColor: #000000;
-    --primaryTxt: #b3b3b3;
-    --secondaryTxt: #4b4b4b;
+    --bgColor: #171717;
+    --primaryTxt: #ffffff;
+    --secondaryTxt: #454545;
+    --tertiaryTxt: #969696;
+    --cardTxt: #171717;
 }
 .nav{
     display: flex;
