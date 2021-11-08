@@ -36,16 +36,6 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
-.waveD1, .waveD2{
-    position: absolute;
-    bottom: 0;
-}
-.waveD2{
-    z-index: -2;
-}
-.waveD1{
-    z-index: -1;
-}
 .content-box{
     /* height: 50vh; */
     /* border: 2px solid red; */
