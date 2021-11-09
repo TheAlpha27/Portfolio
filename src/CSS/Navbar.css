@@ -11,15 +11,20 @@ html[data-theme='dark']{
     --tertiaryTxt: #969696;
     --cardTxt: #171717;
 }
+*{
+    font-family: 'Asap Condensed', sans-serif;
+    font-weight: 300;
+    user-select: none;
+}
 .nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 10vh;
     width: 100%;
-    font-family: 'Dancing Script', cursive;
     font-size: 4vh;
     position: fixed;
+    z-index: 100;
 }
 .navItem{
     margin-right: 8vh;
