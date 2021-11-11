@@ -386,7 +386,7 @@ html[data-theme='dark']{
     .about img{
         height: 90vh;
         filter: blur(2px);
-        opacity: 40%;
+        opacity: 0.4;
         left: 9vw;
         top: 0;
         position: relative;
