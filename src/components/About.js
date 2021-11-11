@@ -4,6 +4,7 @@ import '../CSS/About.css'
 import { Link } from 'react-router-dom';
 import newsImg from '../components/images/newsApp.PNG'
 import txtUtils from '../components/images/txtUtils.PNG'
+import demo from '../components/images/demo.png'
 function About() {
     const frontEndData = [
         {
@@ -165,7 +166,7 @@ function About() {
         <div className='bg'>
             <div className="about">
                 <div className="imgDP">
-                    <img src="https://www.pngall.com/wp-content/uploads/4/Thinking-Man-PNG-Free-Download.png" alt="" />
+                    <img src={demo} alt="" />
                 </div>
                 <div className="textAbout">
                     <h3>

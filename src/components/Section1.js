@@ -1,6 +1,7 @@
 import React from 'react'
 import '../CSS/Section1.css'
 import { Link } from "react-router-dom"
+import demo from '../components/images/demo.png'
 
 function Section1() {
     const box1On = () => {
@@ -53,7 +54,7 @@ function Section1() {
                             <i onMouseEnter={box2On} id="circle2" className="fas fa-phone Icon"></i>
                         </div>
                         <div className="ring">
-                            <img className='profile' src="https://www.pngall.com/wp-content/uploads/4/Thinking-Man-PNG-Free-Download.png" alt="" />
+                            <img className='profile' src={demo} alt="" />
                         </div>
                     </div>
                 </div >
