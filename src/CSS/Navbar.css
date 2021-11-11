@@ -17,12 +17,13 @@ html[data-theme='dark']{
     user-select: none;
 }
 .nav{
+    /* border: 2px solid black; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 10vh;
-    width: 100%;
-    font-size: 4vh;
+    height: 4rem;
+    width: 100vw;
+    font-size: 2rem;
     position: fixed;
     z-index: 100;
 }
@@ -45,6 +46,8 @@ html[data-theme='dark']{
 }
 @media screen and (max-width: 775px) and (orientation: portrait) {
     .nav{
+        max-height: 3rem;
+        font-size: 3vh;
         justify-content:space-between;
     }
     .navItem{

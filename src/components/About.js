@@ -1,7 +1,9 @@
 import React from 'react'
 import Section1 from './Section1'
 import '../CSS/About.css'
-
+import { Link } from 'react-router-dom';
+import newsImg from '../components/images/newsApp.PNG'
+import txtUtils from '../components/images/txtUtils.PNG'
 function About() {
     const frontEndData = [
         {
@@ -119,12 +121,46 @@ function About() {
         },
         {
             name: 'Figma',
-            logo: 'https://lh3.googleusercontent.com/proxy/j7yDDGshkWJgDtVWNiO4CPZCvjuuKudu-eV9_M7Pt_QHxzNCxuc0ZR4ReLHZtUf3alxsmm24v28H-Fa13EMvBbNcfk2uey2Qo0CPfNdGlM6FNWo3-6vLh3o',
+            logo: 'https://cdn.sanity.io/images/599r6htc/production/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=670&h=670&q=75&fit=max&auto=format',
             level: 'Beginner',
             Certificate: 'None',
             CertificateLink: 'None'
         }
     ];
+    const ServiceData = [
+        {
+            image: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5d80ad108519711.5fbf7059e70ba.jpg',
+            name: 'Portfolio Design and Creation',
+            Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit unde natus placeat repellat quod officia illo iste deleniti, excepturi nesciunt nobis dignissimos, temporibus iure.'
+        },
+        {
+            image: 'https://designshack.net/wp-content/uploads/Creative-Red-Poster-Template.jpg',
+            name: 'Poster Designing',
+            Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit unde natus placeat repellat quod officia illo iste deleniti, excepturi nesciunt nobis dignissimos, temporibus iure.'
+        },
+        {
+            image: 'https://www.formarketer.com/magazine/wp-content/uploads/2018/04/The-complete-guide-to-hire-a-Content-Manager-600x411.jpg',
+            name: 'Website Manager',
+            Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit unde natus placeat repellat quod officia illo iste deleniti, excepturi nesciunt nobis dignissimos, temporibus iure.'
+        }
+    ]
+    const projectData = [
+            {
+                image: txtUtils,
+                name: 'TextUtils',
+                stack: 'React.js',
+                Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit unde natus placeat repellat quod officia illo iste deleniti, excepturi nesciunt nobis dignissimos, temporibus iure.',
+                projectLink: 'https://github.com/TheAlpha27/txtutils-cwh'
+            },
+            {
+                // image: 'https://www.formarketer.com/magazine/wp-content/uploads/2018/04/The-complete-guide-to-hire-a-Content-Manager-600x411.jpg',
+                image: newsImg,
+                name: 'NewsMonkey',
+                stack: 'React.js',
+                Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit unde natus placeat repellat quod officia illo iste deleniti, excepturi nesciunt nobis dignissimos, temporibus iure.',
+                projectLink: 'https://github.com/TheAlpha27/React-App-NewsMonkey-CWH'
+            }
+    ]
     return (
         <div className='bg'>
             <div className="about">
@@ -138,7 +174,7 @@ function About() {
                     <h1>Utsav Soni</h1>
                     <p className="details">
                         I'm a front-end web developer. I'm also familiar with back-end technologies such as node.js so technically I'm a MERN stack developer but I love front-end so yea! <br />
-                        Apart from this I'm a competetive coder with good problem solving skills. <br /> In my free time I love to listen to songs, play guitar, cook new recipies, play video games, workout and most importantly I sleep!
+                        Apart from this I'm a competitive coder with good problem solving skills. <br /> In my free time I love to listen to songs, play guitar, cook new recipes, play video games, workout and most importantly I sleep!
                     </p>
                 </div>
             </div>
@@ -253,7 +289,63 @@ function About() {
                     <h1>
                         Services:-
                     </h1>
-                    
+                    {ServiceData.map(element => {
+                        return <div className="ServiceCard">
+                            <div className="ServiceImgContainer">
+                                <img src={element.image} alt="Logo" />
+                            </div>
+                            <div className="ServiceDetail">
+                                <p>
+                                    <span>Service Name:</span>  {element.name}
+                                </p>
+                                <p>
+                                    <span>Description:</span> {element.Description}
+                                </p>
+                                <div className="contactIcon">
+                                    <Link to='/contact' id='serviceLink'>
+                                        <span>
+                                            Reach Out Here:
+                                        </span>
+                                        <i class="fas fa-lg fa-phone-square-alt"></i>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    })}
+                    <h1>
+                        Projects:-
+                    </h1>
+                    {projectData.map(element => {
+                        return <div className="projectCard">
+                            <div className="ProjectImgContainer">
+                                <img src={element.image} alt="Logo" />
+                            </div>
+                            <div className="projectDetail">
+                                <p>
+                                    <span>Project Name:</span>  {element.name}
+                                </p>
+                                <p>
+                                    <span>Tech Stack:</span>  {element.stack}
+                                </p>
+                                <p>
+                                    <span>Description:</span> {element.Description}
+                                </p>
+                                <div className="contactIcon">
+                                    <a target="_blank" href={element.projectLink} id='serviceLink'>
+                                        <span>
+                                            Link to project
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    })}
+                    <h1>
+                        Work Experience:-
+                    </h1>
+                    <h1>
+                        Achievements:-
+                    </h1>
                 </div>
             </div>
         </div>

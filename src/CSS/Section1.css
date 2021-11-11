@@ -57,6 +57,7 @@ body{
     position: relative;
     top: 5rem;
     border: 0.1rem solid var(--primaryTxt);
+    background-color: var(--primaryTxt);
     width: 10rem;
     height: 0px;
 }
