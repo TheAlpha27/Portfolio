@@ -156,7 +156,7 @@ html[data-theme='dark']{
 .skillDetail p span{
     font-weight: bold;
 }
-.ServiceCard{
+.ServiceCard, .projectCard{
     display: flex;
     flex-direction: column;
     height: 36rem;
@@ -169,7 +169,7 @@ html[data-theme='dark']{
     margin: 0.5rem;
     margin-bottom: 2rem;
 }
-.ServiceImgContainer{
+.ServiceImgContainer, .ProjectImgContainer{
     /* border: 2px solid black; */
     width: 27rem;
     max-height: 18rem;
@@ -177,7 +177,7 @@ html[data-theme='dark']{
     align-items: flex-start;
     justify-content: center;
 }
-.ServiceImgContainer img{
+.ServiceImgContainer img, .ProjectImgContainer img{
     max-height: 18rem;
     width: 27rem;
     /* margin: 2rem; */
@@ -195,12 +195,12 @@ html[data-theme='dark']{
     padding-left: 2rem;
     padding-right: 2rem;
 }
-.ServiceDetail p{
+.ServiceDetail p, .projectDetail p{
     margin: 0;
     margin-bottom: 1rem;
     padding: 0;
 }
-.ServiceDetail span{
+.ServiceDetail span, .projectDetail span{
     font-weight: bold;
 }
 .contactIcon{
@@ -223,35 +223,6 @@ html[data-theme='dark']{
 #serviceLink:hover{
     color: var(--secondaryTxt);
 }
-.projectCard{
-    display: flex;
-    flex-direction: column;
-    height: 36rem;
-    align-items: center;
-    border-radius: 2rem;
-    background-color: white;
-    box-shadow: -0.5rem -0.5rem 0.8rem 0.4rem rgb(243, 243, 243), 0.5rem 0.5rem 0.8rem 0.4rem rgb(202, 200, 200);
-    font-size: 1.3rem;
-    width: 27rem;
-    margin: 0.5rem;
-    margin-bottom: 2rem;
-}
-.ProjectImgContainer{
-    /* border: 2px solid black; */
-    width: 27rem;
-    max-height: 18rem;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-.ProjectImgContainer img{
-    max-height: 18rem;
-    width: 27rem;
-    /* margin: 2rem; */
-    /* padding-top: 1rem; */
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-}
 .projectDetail{
     display: flex;
     flex-direction: column;
@@ -260,14 +231,6 @@ html[data-theme='dark']{
     height: 100%;
     width: 27rem;
     padding: 2rem;
-}
-.projectDetail p{
-    margin: 0;
-    margin-bottom: 1rem;
-    padding: 0;
-}
-.projectDetail span{
-    font-weight: bold;
 }
 @media screen and (max-width: 895px ) {
     .contentBox{
@@ -573,5 +536,231 @@ html[data-theme='dark']{
     }
     #serviceLink:hover{
         color: var(--secondaryTxt);
+    }
+}
+@media screen and (max-width: 830px) and (orientation: landscape){
+    .about{
+        color: var(--primaryTxt);
+        height: 95vh;
+        overflow: hidden;
+        background-image: linear-gradient(to top, var(--secondaryTxt), var(--tertiaryTxt));
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        display: flex;
+    }
+    .imgDP{
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* overflow: hidden; */
+        width: 30vw;
+        /* margin-left: 5vw; */
+        margin-left: auto;
+    }
+    .textAbout{
+        margin-right: auto;
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        /* margin-right: 5vw; */
+        width: 65vw;
+        z-index: 1;
+        margin-top: 0;
+    }
+    .about img{
+        position: relative;
+        height: 150vh;
+        left: 5vw;
+    }
+    .about h3{
+        margin: 0;
+        padding: 0;
+        /* border: 2px solid black; */
+        font-size: 6vh;
+        position: relative;
+        align-self: flex-start;
+        margin-bottom: 2vh;
+        bottom: 5vh;
+    }
+    .about h1{
+        margin: 0;
+        padding: 0;
+        /* border: 2px solid black; */
+        font-size: 10vh;
+        position: relative;
+        align-self: flex-start;
+        margin-left: 2rem;
+        font-weight: bold;
+        margin-bottom: 2vh;
+        bottom: 5vh;
+    }
+    .about .details{
+        margin: 0;
+        font-size: 4vh;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        /* border: 2px solid black; */
+        position: relative;
+        bottom: 5vh;
+    }
+    .contentBox{
+        z-index: 2;
+        position: relative;
+        bottom: 10vh;
+        color: var(--secondaryTxt);
+        align-self: center;
+        width: 85vw;
+        background-color: var(--bgColor);
+        padding: 1rem;
+        font-size: 1.3rem;
+        border-radius: 2rem;
+        box-shadow: 0px 0px 10rem 1rem var(--secondaryTxt);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .skillsContainer{
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .skillsContainer h1{
+        width: inherit;
+        /* border: 2px solid green; */
+        margin: 1rem;
+        text-align: center;
+        /* text-decoration:underline; */
+    }
+    .skillsContainer h2{
+        width: inherit;
+        margin: 1rem;
+        /* border: 2px solid green; */
+        text-align: center;
+    }
+    .skillCard{
+        /* border: 2px solid red; */
+        display: flex;
+        height: 12rem;
+        align-items: center;
+        border-radius: 2rem;
+        background-color: white;
+        box-shadow: -0.5rem -0.5rem 0.8rem 0.4rem rgb(243, 243, 243), 0.5rem 0.5rem 0.8rem 0.4rem rgb(202, 200, 200);
+        font-size: 1.3rem;
+        width: 20rem;
+        margin: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    .logoContainer{
+        /* border: 2px solid blue; */
+        width: 10rem;
+        height: 12rem;
+        display: flex;
+        padding: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .logoContainer img{
+        max-height: 7rem;
+        max-width: 8rem;
+    }
+    .skillDetail{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /* border: 2px solid blue; */
+        height: 12rem;
+        width: 10rem;
+        font-size: 1rem;
+    }
+    .skillDetail p{
+        margin: 0;
+        padding: 0;
+    }
+    .skillDetail p span{
+        font-weight: bold;
+    }
+    .ServiceCard, .projectCard{
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        height: 24rem;
+        align-items: center;
+        border-radius: 2rem;
+        background-color: white;
+        box-shadow: -0.5rem -0.5rem 0.8rem 0.4rem rgb(243, 243, 243), 0.5rem 0.5rem 0.8rem 0.4rem rgb(202, 200, 200);
+        font-size: 0.9rem;
+        width: 18rem;
+        margin: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    .ServiceImgContainer, .ProjectImgContainer{
+        /* border: 2px solid black; */
+        width: 18rem;
+        max-height: 12rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .ServiceImgContainer img, .ProjectImgContainer img{
+        max-height: 12rem;
+        width: 18rem;
+        /* margin: 2rem; */
+        /* padding-top: 1rem; */
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+    }
+    .ServiceDetail{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* border: 2px solid blue; */
+        height: 100%;
+        width: 18rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .ServiceDetail p, .projectDetail p{
+        margin: 0;
+        margin-bottom: 0.3rem;
+        padding: 0;
+    }
+    .ServiceDetail span, .projectDetail span{
+        font-weight: bold;
+        margin-bottom: 0.2rem;
+    }
+    .contactIcon{
+        display: flex;
+        width: 100%;
+        /* border: 2px solid black; */
+        justify-content: flex-end;
+    }
+    .contactIcon i{
+        margin-left: 0.5rem;
+    }
+    #serviceLink{
+        /* border: 2px solid green; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: var(--primaryTxt);
+    }
+    #serviceLink:hover{
+        color: var(--secondaryTxt);
+    }
+    .projectDetail{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* border: 2px solid blue; */
+        height: 100%;
+        width: 18rem;
+        padding: 1rem;
     }
 }
