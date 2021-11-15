@@ -1,0 +1,476 @@
+.bgContact{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, white, rgb(3, 201, 201));
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.Imgcontainer{
+    position: relative;
+    align-self: center;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.imgContact{
+    position: relative;
+    /* border: 2px solid black; */
+    height: 38rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 24.7rem;
+    left: 2rem;
+}
+.hand{
+    position: relative;
+    height: 12.5rem;
+}
+#hand1{
+    /* border: 2px solid red; */
+    right: 12rem;
+    top: 36.5rem;
+    transform: rotate(-20deg);
+}
+#hand2{
+    /* border: 2px solid blue; */
+    right: 13rem;
+    top: 15.5rem;
+    transform: rotate(10deg);
+}
+#hand3{
+    /* border: 2px solid green; */
+    transform: rotate(-10deg) scaleX(-1);
+    top: 3.2rem;
+    left: 10rem;
+}
+.logoCont{
+    z-index: 1;
+    position: relative;
+    height: 2.5rem;
+    /* border: 2px solid black; */
+}
+#github{
+    right: 15rem;
+    top: -7.2rem;
+}
+#linkedin{
+    left: 12rem;
+    bottom: 9.5rem;
+}
+#insta{
+    left: 10rem;
+    bottom: 3.5rem;
+}
+#twitter{
+    right: 14.5rem;
+    bottom: 5.5rem;
+    height: 3rem;
+}
+.logoCont:hover{
+    cursor: pointer;
+    transform: scale(1.5) translateY(-0.5rem);
+}
+.leftDetails{
+    position: relative;
+    height: 100vh;
+    width: 30rem;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0.5rem;
+}
+.leftDetails h1{
+    font-size: 4rem;
+    color: rgb(0, 59, 59);
+}
+.leftDetails h1 span{
+    color: teal;
+}
+.leftDetails div{
+    padding-left: 2rem;
+    padding-bottom: 1.2rem;
+    font-size: 1.7rem;
+}
+.leftDetails div span{
+    color: teal;
+    font-size: 1.2rem;
+    user-select:text;
+}
+.resume{
+    font-size: 1.2rem !important;
+}
+.resume a{
+    /* border: 2px solid black; */
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+@media screen and (max-width: 1200px) and (orientation: portrait) {
+    .bgContact{
+        /* height: 100vh; */
+        background-image: linear-gradient(to bottom, white, rgb(3, 201, 201));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        flex-direction: column;
+    }
+    .Imgcontainer{
+        position: relative;
+        align-self: center;
+        /* border: 2px solid blue; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .imgContact{
+        position: relative;
+        /* border: 2px solid black; */
+        height: 40rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 23rem;
+        left: 2rem;
+    }
+    .hand{
+        position: relative;
+        height: 13rem;
+    }
+    #hand1{
+        /* border: 2px solid red; */
+        right: 12rem;
+        top: 42rem;
+        transform: rotate(-20deg);
+    }
+    #hand2{
+        /* border: 2px solid blue; */
+        right: 13rem;
+        top: 19.5rem;
+        transform: rotate(10deg);
+    }
+    #hand3{
+        /* border: 2px solid green; */
+        transform: rotate(-10deg) scaleX(-1);
+        top: 6.8rem;
+        left: 10.5rem;
+    }
+    .logoCont{
+        z-index: 1;
+        position: relative;
+        height: 2.7rem;
+        /* border: 2px solid black; */
+    }
+    #github{
+        right: 15rem;
+        top: -4.5rem;
+    }
+    #linkedin{
+        left: 12.5rem;
+        bottom: 6.5rem;
+    }
+    #insta{
+        left: 10.5rem;
+        bottom: 0.5rem;
+    }
+    #twitter{
+        right: 14.5rem;
+        bottom: 2rem;
+        height: 3.3rem;
+    }
+    .logoCont:hover{
+        cursor: pointer;
+        transform: scale(1.5) translateY(-0.5rem);
+    }
+    .leftDetails{
+        position: relative;
+        top: 28rem;
+        height: 30vh;
+        width: 100vw;
+        /* border: 2px solid green; */
+        display: flex;
+        margin-top: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .leftDetails h1{
+        margin: 0;
+        padding-bottom: 1.5rem;
+        font-size: 4rem;
+        color: rgb(0, 59, 59);
+    }
+    .leftDetails h1 span{
+        color: teal;
+    }
+    .leftDetails div{
+        padding-left: 0;
+        padding-bottom: 1.5rem;
+        font-size: 2rem;
+    }
+    .leftDetails div span{
+        color: teal;
+        font-size: 1.6rem;
+        user-select:text;
+    }
+    .resume{
+        font-size: 1.6rem !important;
+    }
+    .resume a{
+        /* border: 2px solid black; */
+        border-radius: 0.2rem;
+        padding: 0.2rem;
+        background-color: teal;
+        color: white;
+    }
+}
+@media screen and (max-width: 767px) and (orientation: portrait){
+    .bgContact{
+        /* height: 100vh; */
+        background-image: linear-gradient(to bottom, white, rgb(3, 201, 201));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        flex-direction: column;
+    }
+    .Imgcontainer{
+        position: relative;
+        align-self: center;
+        /* border: 2px solid blue; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .imgContact{
+        position: relative;
+        /* border: 2px solid black; */
+        height: 23rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 14.8rem;
+        left: 2rem;
+    }
+    .hand{
+        position: relative;
+        height: 8rem;
+    }
+    #hand1{
+        /* border: 2px solid red; */
+        right: 6.5rem;
+        top: 24rem;
+        transform: rotate(-20deg);
+    }
+    #hand2{
+        /* border: 2px solid blue; */
+        right: 7rem;
+        top: 10.5rem;
+        transform: rotate(10deg);
+    }
+    #hand3{
+        /* border: 2px solid green; */
+        transform: rotate(-10deg) scaleX(-1);
+        top: 2.6rem;
+        left: 7rem;
+    }
+    .logoCont{
+        z-index: 1;
+        position: relative;
+        height: 1.5rem;
+        /* border: 2px solid black; */
+    }
+    #github{
+        right: 8rem;
+        top: -3.5rem;
+    }
+    #linkedin{
+        left: 8rem;
+        bottom: 5.2rem;
+    }
+    #insta{
+        left: 7rem;
+        bottom: 1.5rem;
+    }
+    #twitter{
+        right: 8rem;
+        bottom: 2.4rem;
+        height: 1.8rem;
+    }
+    .logoCont:hover{
+        cursor: pointer;
+        transform: scale(1.5) translateY(-0.5rem);
+    }
+    .leftDetails{
+        position: relative;
+        top: 16rem;
+        height: 30vh;
+        width: 100vw;
+        /* border: 2px solid green; */
+        display: flex;
+        margin-top: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .leftDetails h1{
+        margin: 0;
+        padding-bottom: 1rem;
+        font-size: 2.5rem;
+        color: rgb(0, 59, 59);
+    }
+    .leftDetails h1 span{
+        color: teal;
+    }
+    .leftDetails div{
+        padding-left: 0;
+        padding-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+    .leftDetails div span{
+        color: teal;
+        font-size: 0.9rem;
+        user-select:text;
+    }
+    .resume{
+        font-size: 0.9rem !important;
+    }
+    .resume a{
+        /* border: 2px solid black; */
+        border-radius: 0.2rem;
+        padding: 0.2rem;
+        background-color: teal;
+        color: white;
+    }
+}
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    .bgContact{
+        height: 100vh;
+        background-image: linear-gradient(to bottom, white, rgb(3, 201, 201));
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .Imgcontainer{
+        position: relative;
+        align-self: center;
+        /* border: 2px solid blue; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: auto;
+    }
+    .imgContact{
+        position: relative;
+        /* border: 2px solid black; */
+        height: 20rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 11.8rem;
+        left: 2rem;
+    }
+    .hand{
+        position: relative;
+        height: 6rem;
+    }
+    #hand1{
+        /* border: 2px solid red; */
+        right: 4.8rem;
+        top: 21.5rem;
+        transform: rotate(-20deg);
+    }
+    #hand2{
+        /* border: 2px solid blue; */
+        right: 5.5rem;
+        top: 10.9rem;
+        transform: rotate(10deg);
+    }
+    #hand3{
+        /* border: 2px solid green; */
+        transform: rotate(-10deg) scaleX(-1);
+        top: 4.9rem;
+        left: 6rem;
+    }
+    .logoCont{
+        z-index: 1;
+        position: relative;
+        height: 1.7rem;
+        /* border: 2px solid black; */
+    }
+    #github{
+        right: 6.5rem;
+        top: -0.3rem;
+    }
+    #linkedin{
+        left: 7rem;
+        bottom: 2.3rem;
+    }
+    #insta{
+        left: 6.5rem;
+        bottom: -0.6rem;
+    }
+    #twitter{
+        right: 6.4rem;
+        bottom: 1rem;
+        height: 2.2rem;
+    }
+    .logoCont:hover{
+        cursor: pointer;
+        transform: scale(1.5) translateY(-0.5rem);
+    }
+    .leftDetails{
+        position: relative;
+        height: 100vh;
+        width: 20rem;
+        margin-left: auto;
+        /* border: 2px solid green; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0.5rem;
+    }
+    .leftDetails h1{
+        font-size: 2rem;
+        color: rgb(0, 59, 59);
+    }
+    .leftDetails h1 span{
+        color: teal;
+    }
+    .leftDetails div{
+        padding-left: 2rem;
+        padding-bottom: 1.2rem;
+        font-size: 1.3rem;
+    }
+    .leftDetails div span{
+        color: teal;
+        font-size: 0.9rem;
+        user-select:text;
+    }
+    .resume{
+        font-size: 0.9rem !important;
+    }
+    .resume a{
+        /* border: 2px solid black; */
+        border-radius: 0.2rem;
+        padding: 0.2rem;
+        background-color: teal;
+        color: white;
+    }
+}
