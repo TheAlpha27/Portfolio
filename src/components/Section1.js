@@ -36,7 +36,7 @@ function Section1() {
                         <p className="info">
                             <ul>
                                 <li>Front-end web developer</li>
-                                <li>Goto about section to know more</li>
+                                <li>Please visit the about section to know more</li>
                             </ul>
                         </p>
                     </div>

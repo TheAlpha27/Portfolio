@@ -1,15 +1,10 @@
 html[data-theme='light']{
-    --bgColor: #ffffff;
-    --primaryTxt: #024949;
-    --secondaryTxt: #008080;
-    --tertiaryTxt: #40E0D0;
+    --navPrimaryTxt: #2c646a;
+    --navSecondaryTxt: #6fb3b8;
 }
 html[data-theme='dark']{
-    --bgColor: #171717;
-    --primaryTxt: #ffffff;
-    --secondaryTxt: #454545;
-    --tertiaryTxt: #969696;
-    --cardTxt: #171717;
+    --navPrimaryTxt: #388087;
+    --navSecondaryTxt: #6fb3b8;
 }
 *{
     font-family: 'Asap Condensed', sans-serif;
@@ -30,18 +25,18 @@ html[data-theme='dark']{
 .navItem{
     margin-right: 8vh;
     text-decoration: none;
-    color: var(--primaryTxt);
+    color: var(--navPrimaryTxt);
 }
 .icon{
     margin-right: 4vh;
-    color: var(--primaryTxt);
+    color: var(--navPrimaryTxt);
 }
 .navItem:hover{
-    color: var(--secondaryTxt);
-    border-bottom: 2px solid var(--secondaryTxt) ;
+    color: var(--navSecondaryTxt);
+    border-bottom: 2px solid var(--navSecondaryTxt) ;
 }
 .icon:hover{
-    color: var(--secondaryTxt);
+    color: var(--navSecondaryTxt);
     cursor: pointer;
 }
 @media screen and (max-width: 775px) and (orientation: portrait) {
