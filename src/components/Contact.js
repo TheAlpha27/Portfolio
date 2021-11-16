@@ -20,7 +20,7 @@ function Contact() {
                     Email: <span>utsav.soni.27@gmail.com</span>
                 </div>
                 <div className="resume">
-                    Click here to download my <a target="_blank" href="https://drive.google.com/file/d/1qcIfqhND0jwdwViSeGTCHgjVGkySzyn4/view?usp=sharing" id="btn">Resume</a>
+                    Click here to download my <a target="_blank" href="https://drive.google.com/file/d/1qcIfqhND0jwdwViSeGTCHgjVGkySzyn4/view?usp=sharing">Resume</a>
                 </div>
             </div>
             <div className="Imgcontainer">
@@ -40,9 +40,7 @@ function Contact() {
                 <a target="_blank" href="https://twitter.com/Utsav_soni27">
                     <img src={twitter} alt="Twitter.logo" id="twitter" className="logoCont" />
                 </a>
-                <a href="">
                     <img className="imgContact" src={demo} alt="Display Picture" />
-                </a>
             </div>
         </div>
     )
