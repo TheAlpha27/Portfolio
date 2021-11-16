@@ -3,8 +3,8 @@ html[data-theme='light']{
     --navSecondaryTxt: #6fb3b8;
 }
 html[data-theme='dark']{
-    --navPrimaryTxt: #388087;
-    --navSecondaryTxt: #6fb3b8;
+    --navPrimaryTxt: #cccccc;
+    --navSecondaryTxt: #a4a29e;
 }
 *{
     font-family: 'Asap Condensed', sans-serif;
