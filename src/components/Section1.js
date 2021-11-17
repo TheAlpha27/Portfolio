@@ -7,12 +7,12 @@ function Section1() {
     const box1On = () => {
         document.getElementById('box1').style.display = 'block';
         document.getElementById('circle1').style.color = 'var(--cardTxt)';
-        document.getElementById('circle1').style.transform = 'scale(0.8)';
+        document.getElementById('circle1').style.transform = 'scale(1)';
     }
     const box2On = () => {
         document.getElementById('box2').style.display = 'block';
         document.getElementById('circle2').style.color = 'var(--cardTxt)';
-        document.getElementById('circle2').style.transform = 'scale(0.8)';
+        document.getElementById('circle2').style.transform = 'scale(1)';
     }
     const box1Off = () => {
         document.getElementById('box1').style.display = 'none';
