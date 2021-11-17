@@ -132,17 +132,17 @@ function About() {
         {
             image: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5d80ad108519711.5fbf7059e70ba.jpg',
             name: 'Portfolio Design and Creation',
-            Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit unde natus placeat repellat quod officia illo iste deleniti, excepturi nesciunt nobis dignissimos, temporibus iure.'
+            Description: "I will be your portfolio designer and creator. The portfolio website can be created using just HTML, CSS and Javascript or the frameworks like Bootstrap or React.js, Its your choice."
         },
         {
             image: 'https://designshack.net/wp-content/uploads/Creative-Red-Poster-Template.jpg',
             name: 'Poster Designing',
-            Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit unde natus placeat repellat quod officia illo iste deleniti, excepturi nesciunt nobis dignissimos, temporibus iure.'
+            Description: "I will be your poster/template designer for different events like competitions, parties, business etc. "
         },
         {
             image: 'https://www.formarketer.com/magazine/wp-content/uploads/2018/04/The-complete-guide-to-hire-a-Content-Manager-600x411.jpg',
             name: 'Website Manager',
-            Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit unde natus placeat repellat quod officia illo iste deleniti, excepturi nesciunt nobis dignissimos, temporibus iure.'
+            Description: 'I will be your website manager who will manage/change content on the website according to your will. Keeping the website up to date with the content provided by you will be my main task.'
         }
     ]
     const projectData = [
@@ -150,7 +150,7 @@ function About() {
                 image: txtUtils,
                 name: 'TextUtils',
                 stack: 'React.js',
-                Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit unde natus placeat repellat quod officia illo iste deleniti, excepturi nesciunt nobis dignissimos, temporibus iure.',
+                Description: 'It is a react based project with text analytical logic like changing the text to upper/lower case, one click copy/clear, removing excess white-spaces etc.',
                 projectLink: 'https://github.com/TheAlpha27/txtutils-cwh'
             },
             {
@@ -158,7 +158,7 @@ function About() {
                 image: newsImg,
                 name: 'NewsMonkey',
                 stack: 'React.js',
-                Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit unde natus placeat repellat quod officia illo iste deleniti, excepturi nesciunt nobis dignissimos, temporibus iure.',
+                Description: 'It is a react based news application which fetches news/data from news API. It uses features like infinite loading and category wise news etc.',
                 projectLink: 'https://github.com/TheAlpha27/React-App-NewsMonkey-CWH'
             }
     ]

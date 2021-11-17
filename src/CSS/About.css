@@ -201,7 +201,7 @@ html[data-theme='dark']{
 .ServiceDetail{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     /* border: 2px solid blue; */
     height: 100%;
     width: 27rem;
@@ -210,16 +210,21 @@ html[data-theme='dark']{
 }
 .ServiceDetail p, .projectDetail p{
     margin: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
     padding: 0;
 }
 .ServiceDetail span, .projectDetail span{
     font-weight: bold;
 }
 .contactIcon{
+    position: relative;
     display: flex;
+    height: 100%;
     width: 100%;
+    margin-bottom: 0.5rem;
     /* border: 2px solid black; */
+    align-items: flex-end;
     justify-content: flex-end;
 }
 .contactIcon i{
@@ -244,6 +249,7 @@ html[data-theme='dark']{
     height: 100%;
     width: 27rem;
     padding: 2rem;
+    padding-bottom: 0.5rem;
 }
 @media screen and (max-width: 895px ) {
     .contentBox{
